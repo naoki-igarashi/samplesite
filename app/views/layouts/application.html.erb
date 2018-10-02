@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Premierblog</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-logo">
+        <a href="/home/top">TweetApp</a>
+      </div>
+      <ul class="header-menus">
+        <li>
+          <a href="/about">TweetAppとは</a>
+        </li>
+
+        <li>
+          <a href="/posts/index">投稿一覧</a>
+        </li>
+
+        <li>
+          <a href="/posts/new">新規投稿</a>
+        </li>
+
+      </ul>
+    </header><!-- ここにヘッダーを書いてください -->
+
+    </div>
+    <% if flash[:notice] %>
+    <div class="flash">
+      <%= flash[:notice] %>
+
+    </div>
+
+    <% end %>
+    <%= yield %>
+  </body>
+</html>

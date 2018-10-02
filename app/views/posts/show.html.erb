@@ -1,0 +1,7 @@
+<h1><%= @post.content %></h1>
+<p> <%= @post.created_at %> </p>
+
+<%= link_to("編集", "/posts/#{@post.id}/edit") %>
+<%= link_to("削除", "/posts/#{@post.id}/destroy", {method:"post"}) %>
+
+<!--  link_toでpostへのリンクを作る時は第3引数にmethodを入れる-->

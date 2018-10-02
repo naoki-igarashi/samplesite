@@ -1,0 +1,9 @@
+<div class="posts-index-item">
+
+
+<% @posts.each do |post| %>
+  <h3><%= link_to("#{post.content}", "/posts/#{post.id}") %></h3>
+  <h4><%= post.created_at %></h4>
+
+<% end %>
+</div>

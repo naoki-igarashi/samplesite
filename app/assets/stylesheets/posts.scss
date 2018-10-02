@@ -1,0 +1,27 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+textarea {
+  height: 150px;
+  width:200px;
+
+}
+.posts-index-item {
+  padding:20px 30px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+  color: black;
+}
+
+.posts-index-item a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+
+input {
+  height: 20px;
+  width: 40px;
+}
